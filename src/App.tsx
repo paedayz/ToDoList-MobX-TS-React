@@ -8,8 +8,8 @@ import TodoAdd from "./components/TodoAdd";
 function App() {
   return (
     <div className="App">
-      <TodoList />
       <TodoAdd />
+      <TodoList />
     </div>
   );
 }
