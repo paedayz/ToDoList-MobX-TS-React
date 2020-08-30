@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import TodoStore from "../stores/TodoStore";
 import { observer } from "mobx-react-lite";
 
-const todoList = () => {
+const TodoList = () => {
   const todoStore = useContext(TodoStore);
   const { todos, toggleTodo, removeTodo } = todoStore;
   return (
@@ -44,4 +44,4 @@ const todoList = () => {
   );
 };
 
-export default observer(todoList);
+export default observer(TodoList);
